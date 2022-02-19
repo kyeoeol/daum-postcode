@@ -1,7 +1,17 @@
 # Daum PostCode Service
-Daum 우편번호 서비스를 이용해 쉽고 간편하게 우편번호 검색, 도로명 주소 입력 기능 만들기
+Daum 우편번호 서비스를 이용해 쉽고 간편하게 우편번호 검색, 도로명 주소 입력 기능 만들기 <br>
 
 <image src="https://user-images.githubusercontent.com/80438047/154786539-53ee9551-1cdd-4f66-8006-82d48478e0cb.gif" height="400">
+
+**요약**
+> 1. 우편번호 검색 페이지 생성
+> 2. webView를 이용해 페이지 load
+> 3. WKUserContentController & WKScriptMessageHandler를 이용해 해당 페이지로 부터 우편번호 & 주소 받아오기
+> 4. 입력할 textField에 적용
+
+⚠️ **Daum 우편번호 서비스를 앱에서 사용하려면 webView 및 브라우저를 사용해야 한다.** <br>
+
+⚠️ **Daum 우편번호 서비스는 인터넷이 가능한 환경에서 동작한다.** (html을 로컬 파일로 두고 사용할 수 없다.)
 
 <br>
   
@@ -19,12 +29,19 @@ Daum 우편번호 서비스를 이용해 쉽고 간편하게 우편번호 검색
 	<true/>
 </dict>
 ```
+	
 * **node 설치 & serve 설치**
 ```
 $ brew update
 $ brew install node
 $ npm -g install serve
 ```
+	
+* **로컬서버**
+  * postcode.html 이 있는 경로에서 ``$ serve .`` 실행
+  * 아래 이미지에 표시된 영역에 나오는 주소를 이용해 webView load
+  * ex. ``http://000.000.0.00:300/postcode.html``
+<image src="https://user-images.githubusercontent.com/80438047/154787236-9b4be9f1-6f0a-4783-b081-6b0ecd0549bd.png">
 
 <br>
 <br>
