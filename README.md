@@ -1,9 +1,9 @@
 # Daum PostCode Service
-Daum 우편번호 서비스를 이용해 쉽고 간편하게 우편번호 검색, 도로명 주소 입력 기능 만들기 <br>
+Daum 우편번호 서비스를 이용한 우편번호 검색 & 도로명 주소 입력 <br>
 
 <image src="https://user-images.githubusercontent.com/80438047/154786539-53ee9551-1cdd-4f66-8006-82d48478e0cb.gif" height="400">
 
-**요약**
+> ### 요약
 > 1. 우편번호 검색 페이지 생성
 > 2. webView를 이용해 페이지 load
 > 3. WKUserContentController & WKScriptMessageHandler를 이용해 해당 페이지로 부터 우편번호 & 주소 받아오기
